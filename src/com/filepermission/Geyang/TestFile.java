@@ -24,8 +24,9 @@ public class TestFile {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-		// Allow all types of access to all files
-		Permission java.io.FilePermission "D:\\Documents\\EclipseWorkSpace\\Stardard for Java\\filePermission.txt",
+		// Allow all types of access to all files, Here is the problem
+		Permission java.io.FilePermission 
+		"D:\\Documents\\EclipseWorkSpace\\Stardard for Java\\filePermission.txt",
 		"read,write,delete,execute"; 
 		
 		f.setReadable(true);
