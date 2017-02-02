@@ -17,6 +17,7 @@ public class TestFile {
 		
 		
 		File f = new File("filePermission.txt");
+		f.setReadable(true);
 		try {
 			if(f.createNewFile())System.out.println("Success!");
 			else System.out.println ("Error, file already exists.");
@@ -25,9 +26,7 @@ public class TestFile {
 			e1.printStackTrace();
 		}
 		// Allow all types of access to all files, Here is the problem
-		Permission java.io.FilePermission 
-		"D:\\Documents\\EclipseWorkSpace\\Stardard for Java\\filePermission.txt",
-		"read,write,delete,execute"; 
+		
 		
 		f.setReadable(true);
 		try {
