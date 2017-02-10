@@ -5,10 +5,17 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
+/*
+ * 1. In your project folder,Create a new txt file named Hello.txt
+ * 2. Create another secret file named 'secret.txt' outside of the project folder one layer
+ * 3. The file path should be NAME
+ * 4. The malicious path should be FAKENAME
+ */
+
 public class FilePath {
 	private static final String NAME = "Hello.txt";
 	private static final String FAKENAME = "..\\secret.txt";
-	private static final String FILENAME = "D:\\Documents\\EclipseWorkSpace\\Stardard for Java\\" + FAKENAME;
+	private static final String FILENAME = FAKENAME;
 
 	public static void main(String[] args) {
 

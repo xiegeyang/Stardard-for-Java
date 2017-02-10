@@ -5,6 +5,14 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+
+/*
+ * 1. Create a txt file named 'Hello.txt' in your project folder
+ * 2. Go to C://, double-clike 'Logs' folder, Create a txt file named 'security.txt'
+ * 3. The file path should be PATH + NAME
+ * 4. The malicious path should be PATH + FAKENAME
+ */
+
 public class Security {
 	private static final String NAME = "Hello.txt";
 	private static final String PATH = "Documents\\";
